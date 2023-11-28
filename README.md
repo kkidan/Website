@@ -1,5 +1,5 @@
 # Web Programming 1 Assignment
 
-The purpose of Program Exit Assessment is to show the results of achievement of learning Computer Science Program and all the learning within the program.
+Sauve was born out of a vision to create a meaningful impact on the environment and the lives of those in need.
 
 https://kkidan.github.io/Website/
