@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bahiana&family=Bebas+Neue&family=Josefin+Sans:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Source+Sans+3&display=swap');
+:root {
+    --normalColour: rgb(176, 245, 176);
+    --normalfont: 'Josefin sans', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+.poster {
+    inline-size: 100%;
+    block-size: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./images/F9tjZiPUEm-kkcdX20ZU5R_YpNBlnBeQvXfOphczskE.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.poster1 {
+    inline-size: 100%;
+    block-size: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./images/F9tjZiPUEm-kkcdX20ZU5R_YpNBlnBeQvXfOphczskE.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.navagation {
+    inline-size: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    inline-size: 200px;
+
+}
+
+.navagation ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+
+}
+
+.navagation ul li a {
+    color: white;
+    text-decoration: none;
+    
+}
+.navagation ul li a:hover {
+    border-block-end: solid var(--normalColour);
+    font-style: italic;
+    font-family: var(--normalfont);
+}
+
+.view {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: white;
+}
+.lorem h2{
+    color: black;
+    font-family: var(--normalfont);
+}
+.lorem p {
+    color: black;
+}
+.lorem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 60px;
+    font-family: var(--normalfont);
+}
+.text {
+    flex: 1;
+}
+.text li{
+    color: black;
+    list-style: none;
+    font-family: var(--normalfont);
+    margin-inline-start: 10px;
+}
+.text li a {
+    color: black;
+    font-family: var(--normalfont);
+    text-decoration: none;
+    border-block-end: var(--normalColour) solid;
+    font-style: italic;
+}
+
+.homeimg {
+    flex: 1;
+    text-align: center;
+    float: right;
+}
+.homeimg img {
+    inline-size: 500px;
+}
+
+.hellk {
+    text-align: center;
+    border: 2px solid var(--normalColour);
+    border-radius: 39px;
+    background-color: var(--normalColour);
+}
+.lorem a {
+    text-decoration: none;
+}
+.divine {
+    border: solid 3px var(--normalColour);
+    border-style: solid;
+    display: inline;
+    padding: 9px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: rgb(248, 248, 250);
+}
+
+.view a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(51, 50, 50);
+    
+}
+.footer small {
+    font-family: var(--normalfont);
+}
+
+.foot ul li {
+    display: inline-block;
+    margin-left: 5%;
+    padding: 0;
+
+}
+
+.foot ul li a {
+    font-family: var(--normalfont);
+    color: rgb(254, 255, 255);
+    text-decoration: none;
+}
+.foot ul li a:hover {
+    border-block-end: solid var(--normalColour);
+    font-style: italic;
+}
+
+.view h1,
+p {
+    font-family: var(--normalfont);
+}
+
+address a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-bottom {
+    background: black;
+
+    padding: 15px 0;
+}
+
+footer p {
+    font-size: large;
+}
+
+.sell {
+    display: inline-block;
+    border: solid 3px var(--normalColour);
+    border-style: solid;
+    display: inline;
+    padding: 9px;
+    border-radius: 30px;
+    background-color: transparent;
+    margin-left: 20px;
+
+}
+.test {
+    align-items: center;
+    margin-inline-start: 10%;
+}
+h2 {
+    color: white;
+    text-align: center;
+    
+}
+.about {
+    border: 5px solid var(--normalColour);
+    padding: 20px;
+    margin-inline-start: 70px;
+    margin-inline-end: 70px;
+    margin-block-end: 250px;
+}
+.about p a {
+    text-decoration: none;
+    border-block-end: solid var(--normalColour);
+    font-style: italic;
+}
+.about h2 {
+    font-family: var(--normalfont);
+}
+h3 {
+    margin-left: 10px;
+    font-family: var(--normalfont);
+}
+p {
+    padding: 10px;
+    
+}
+.about p a {
+    color: #fff;
+}
+.product {
+    border: 1px solid var(--normalColour);
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    inline-size: 200px;
+    margin-block-end: 9px;
+    
+}
+.idk h2, button, .price {
+    font-family: var(--normalfont);
+}
+.product img {
+    max-inline-size: 100%;
+    height: auto;
+}
+.product button {
+    background-color: var(--normalColour);
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+.herewego {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 5px;
+}
+.forus {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
+    position: relative;
+    overflow: auto;
+}
+.contact img {
+    inline-size: 20%;
+}
+.contact {
+    
+    align-items: center;
+    text-align: center;
+    border: 1px solid ;
+}
+.contact p,h4,a {
+    color: #fff;
+    font-family: var(--normalfont);
+}
+h4 {
+    font-family: var(--normalfont);
+}
+
+.family {
+    
+    align-items: center;
+    text-align: center;
+    margin-inline-start: 200px;
+    margin-inline-end: 200px;
+    margin-block-end: 118px;
+    margin-block-start: 10px;
+    border-radius: 7px;
+}
+textarea#comment {
+    color: black;
+    block-size: auto;
+}
+input#email {
+    color: black;
+    inline-size: 20%;
+}
+input#firstName {
+    color: black;
+    inline-size: 20%;
+}
+.edit {
+    background-color: var(--normalColour);
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-block-end: 5px;
+}
+.forus a {
+    text-decoration: none;
+    border-block-end: solid var(--normalColour);
+    
+}
+.forus a:hover {
+    font-style: italic;
+}
+.scroll {
+    margin-block-start: 40px;
+    
+}
+
+@media (max-width: 768px) {
+    
+    .navagation {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: small;
+    }
+
+    .navagation ul {
+        margin-block-start: 15px;
+    }
+
+    .navagation ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    
+    img {
+        max-width: 100%;
+        margin-block-start: 15px;
+    }
+
+    ul li a {
+        text-decoration: none;
+    }
+    .herewego {
+        display: inline-block;
+        align-items: center;
+    }
+    
+    .product {
+        
+        margin: 40px;
+        inline-size: 8cm;
+    }
+    .poster1 {
+        inline-size: 100%;
+        block-size: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./images/F9tjZiPUEm-kkcdX20ZU5R_YpNBlnBeQvXfOphczskE.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
+    }
+    .poster {
+        block-size: auto;
+    }
+    #goodbye {
+        display: none;
+    }
+    #goodbye1 {
+        display: none;
+    }
+   .about {
+        margin: 20px;
+   }
+   .forus {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        text-align: center;
+        
+   }
+   .contact {
+        margin-block-end: 10px;
+    
+   }
+   .family {
+        inline-size: max-content;
+        margin: auto;
+   }
+   input#email {
+        color: black;
+        inline-size: 70%;
+    }
+    input#firstName {
+        color: black;
+        inline-size: 70%;
+    }
+    .foot ul li {
+        font-size: 12px
+    }
+    .lorem {
+        display: inline;
+    }
+    .homeimg {
+        text-align: center;
+    }
+    
+}
