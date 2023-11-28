@@ -365,7 +365,7 @@ input#firstName {
     .poster1 {
         inline-size: 100%;
         block-size: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./images/F9tjZiPUEm-kkcdX20ZU5R_YpNBlnBeQvXfOphczskE.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/F9tjZiPUEm-kkcdX20ZU5R_YpNBlnBeQvXfOphczskE.jpg);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
