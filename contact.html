@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sauve - Contact</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-    <link rel="stylesheet" href="./styles/site.css">
+    <link rel="stylesheet" href="site.css">
 </head>
 
 <body>
@@ -21,60 +21,124 @@
                 <li id="goodbye1"><a href="./donate.html">DONATE</a></li>
             </ul>
         </div>
-        
-        <div class="overflow">
-        <main class="forus">
-        <div class="contact">
-            <img src="./images/Screenshot_2023-11-02_094600-removebg-preview.png" alt="map">
-            <h4>OUR MAIN OFFICE</h4>
-            <p>325, boul. de la Cité-des-Jeunes
-                Gatineau, QC</p>
-        </div>
-        <div class="contact">
-            <img src="./images/Screenshot_2023-11-02_094637-removebg-preview.png" alt="phone">
-            <h4>PHONE NUMBER</h4>
-            <a href="tel:999-999-9999">999-999-9999</a>
-        </div>
-        <div class="contact">
-            <img src="./images/Screenshot_2023-11-02_094721-removebg-preview.png" alt="social">
-            <h4>SOCIAL</h4>
-            <a href="https://www.instagram.com/cegepheritagecollege/">Instagram</a>
-        </div>
-        <div class="contact">
-            <img src="./images/Screenshot_2023-11-02_094657-removebg-preview.png" alt="mail">
-            <h4>EMAIL</h4>
-            <a href="mailto:sauve@cloth.ca">sauve@cloth.ca</a>
-        </div>
-        </main>
-        <section class="family">
-        <div class="trial">
-            
+        <div class="forcontact">
             <h3>CONTACT US</h3>
-            
-            
-                <p>Email</p>
-            <label for="email"></label>
-            <input type="text" name="email" id="email">
-            
-            
-                <p>Name</p>
-            <label for="firstName"></label>
-            <input type="text" name="firstName" id="firstName">
-            
-            
-                <p>Comments</p>
-            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-            
-            <div>
-                <button class="edit">SUBMIT</button>
+        </div>
+        <div class="overflow">
+            <main class="forus">
+                <div class="contact">
+                    <img src="./images/Screenshot_2023-11-02_094600-removebg-preview.png" alt="map">
+                    <h4>OUR MAIN OFFICE</h4>
+                    <p>325, boul. de la Cité-des-Jeunes
+                        Gatineau, QC</p>
+                </div>
+                <div class="contact">
+                    <img src="./images/Screenshot_2023-11-02_094637-removebg-preview.png" alt="phone">
+                    <h4>PHONE NUMBER</h4>
+                    <a href="tel:999-999-9999">999-999-9999</a>
+                </div>
+                <div class="contact">
+                    <img src="./images/Screenshot_2023-11-02_094721-removebg-preview.png" alt="social">
+                    <h4>SOCIAL</h4>
+                    <a href="https://www.instagram.com/cegepheritagecollege/" target="_blank">Instagram</a>
+                </div>
+                <div class="contact">
+                    <img src="./images/Screenshot_2023-11-02_094657-removebg-preview.png" alt="mail">
+                    <h4>EMAIL</h4>
+                    <a href="mailto:sauve@cloth.ca">sauve@cloth.ca</a>
+                </div>
+            </main>
+            <div class="family">
+                <div class="trial">
+
+
+
+
+                    <form action="contact.html" name="contact" id="contact" method="get">
+
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" maxlength="30" required placeholder="Shama">
+
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" maxlength="30" required
+                            placeholder="Motherford">
+
+                        <label for="email">E-mail Address</label>
+                        <input type="email" id="email" name="email" maxlength="60" required
+                            placeholder="shamam@gmail.com">
+
+
+                        <label for="source">How did you find out about us</label>
+                        <select id="source" name="source" class="select">
+                            <option value="select">--select one--</option>
+                            <optgroup label="Internet">
+                                <option value="searchEngine">Search Engine</option>
+                                <option value="link">Link from another website</option>
+                            </optgroup>
+                            <optgroup label="Non-Internet">
+                                <option value="friend">Referred by a friend</option>
+                                <option value="advertisement">Advertisement</option>
+                                <option value="flyer">Flyer/Mailing</option>
+                            </optgroup>
+                        </select>
+
+
+
+
+
+                        <label for="informationRequest" class="moreinfo">More information</label>
+                        <textarea id="informationRequest" name="informationRequest"></textarea>
+
+
+
+
+
+
+
+
+                        <fieldset class="preferences">
+                            <legend>More information
+                                about the following?</legend>
+
+                            <input type="checkbox" id="hours" name="hours">
+                            <label for="hours">Hours</label><br>
+                            <input type="checkbox" id="donations" name="donations">
+                            <label for="donations">Donations</label><br>
+                            <input type="checkbox" id="orders" name="orders">
+                            <label for="orders">Orders</label><br>
+                            <input type="checkbox" id="returns" name="returns">
+                            <label for="returns">Returns</label><br>
+
+                        </fieldset>
+                        <fieldset class="often">
+                            <legend>How often do you thrfit?</legend>
+                            <input type="radio" id="weekly" name="often">
+                            <label for="weekly">Weekly</label><br>
+                            <input type="radio" id="monthly" name="often">
+                            <label for="monthly">Monthly</label><br>
+                            <input type="radio" id="occasionally" name="often">
+                            <label for="occasionally">Occasionally</label><br>
+                            <input type="radio" id="never" name="often">
+                            <label for="never">Never</label>
+                        </fieldset>
+
+                        <button type="submit" class="buttons">Submit</button>
+                        <button type="reset" class="buttons">Cancel</button>
+                    </form>
+                </div>
+
             </div>
         </div>
-        
-    </section>
-    </div>
         <footer>
             <div class="footer">
-                <p>Sauve</p>
+                Sauve
+                <div class="footerimg">
+                    Background images by <a href="https://www.pexels.com/">Pexels</a><br>
+                    Icons by <a href="https://www.flaticon.com/">FLATICON</a><br>
+                    Domain Name: sauveFinds.com | 6263081@cegep-heritage.qc.ca <br>
+                    HTML <img src="./images/trustworthy1.png" alt="valid" class="done"> CSS
+
+                  </div>
                 <small>
                     Copyright &copy; 2023, Sauve, Inc.
                 </small>
@@ -89,7 +153,7 @@
                 </nav>
             </div>
         </footer>
-        </div>
+    </div>
 </body>
 
 </html>

@@ -3,6 +3,9 @@
 :root {
     --normalColour: rgb(176, 245, 176);
     --normalfont: 'Josefin sans', sans-serif;
+    --pfontsize: 1.2rem;
+    --lineHeight: 24pt;
+    --italicStyle: italic;
 }
 * {
     margin: 0;
@@ -14,7 +17,7 @@
 .poster {
     inline-size: 100%;
     block-size: auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/F9tjZiPUEm-kkcdX20ZU5R_YpNBlnBeQvXfOphczskE.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./images/F9tjZiPUEm-kkcdX20ZU5R_YpNBlnBeQvXfOphczskE.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -24,13 +27,21 @@
 .poster1 {
     inline-size: 100%;
     block-size: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/F9tjZiPUEm-kkcdX20ZU5R_YpNBlnBeQvXfOphczskE.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./images/F9tjZiPUEm-kkcdX20ZU5R_YpNBlnBeQvXfOphczskE.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     
 }
-
+.poster3 {
+    inline-size: 100%;
+    block-size: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./images/pexels-rachel-claire-5531437.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
 .navagation {
     inline-size: 85%;
     margin: auto;
@@ -40,7 +51,7 @@
     justify-content: space-between;
 }
 
-img {
+ a img {
     inline-size: 200px;
 
 }
@@ -68,14 +79,19 @@ img {
     position: absolute;
     top: 50%;
     text-align: center;
-    color: white;
+    color: #fff;
 }
+.view h1 {
+    font-family: var(--normalfont);
+}
+/* home page first paragraph*/
 .lorem h2{
-    color: black;
+    color: #000;
     font-family: var(--normalfont);
 }
 .lorem p {
-    color: black;
+    color: #000;
+    line-height: var(--lineHeight);
 }
 .lorem {
     display: flex;
@@ -87,6 +103,7 @@ img {
 .text {
     flex: 1;
 }
+
 .text li{
     color: black;
     list-style: none;
@@ -98,7 +115,8 @@ img {
     font-family: var(--normalfont);
     text-decoration: none;
     border-block-end: var(--normalColour) solid;
-    font-style: italic;
+    font-style: var(--italicStyle);
+    line-height: var(--lineHeight);
 }
 
 .homeimg {
@@ -109,7 +127,43 @@ img {
 .homeimg img {
     inline-size: 500px;
 }
+/* home page second paragraph */
+.secondp {
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    text-align: center; 
+    margin: 60px;
+    font-family: var(--normalfont);
+    line-height: var(--lineHeight);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.centerit p a{
+    font-family: var(--normalfont);
+    color: var(--normalColour);
+}
+.centerit h2 {
+    font-family: var(--normalfont);
+}
 
+/* Table */
+table {
+    border-collapse: collapse;
+    
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 2px;
+    font-family: var(--normalfont);
+  }
+ .rates {
+   margin-inline-start: auto;
+   margin-inline-end: auto;
+ }
+ caption strong {
+    font-family: var(--normalfont);
+ }
 .hellk {
     text-align: center;
     border: 2px solid var(--normalColour);
@@ -139,7 +193,8 @@ img {
     text-decoration: none;
     color: white;
     background-color: rgb(51, 50, 50);
-    
+    line-height: var(--lineHeight);
+    font-family: var(--normalfont);
 }
 .footer small {
     font-family: var(--normalfont);
@@ -159,10 +214,15 @@ img {
 }
 .foot ul li a:hover {
     border-block-end: solid var(--normalColour);
-    font-style: italic;
+    font-style: var(--italicStyle);
 }
-
-.view h1,
+.footerimg {
+    font-family: var(--normalfont);
+}
+.footerimg a {
+    font-family: var(--normalfont);
+    font-style: var(--italicStyle);
+}
 p {
     font-family: var(--normalfont);
 }
@@ -182,6 +242,7 @@ footer p {
     font-size: large;
 }
 
+
 .sell {
     display: inline-block;
     border: solid 3px var(--normalColour);
@@ -198,7 +259,7 @@ footer p {
     margin-inline-start: 10%;
 }
 h2 {
-    color: white;
+    color: #fff;
     text-align: center;
     
 }
@@ -206,20 +267,37 @@ h2 {
     border: 5px solid var(--normalColour);
     padding: 20px;
     margin-inline-start: 70px;
-    margin-inline-end: 70px;
+    margin-inline-end: 35px;
     margin-block-end: 250px;
+    line-height: var(--lineHeight);
 }
 .about p a {
     text-decoration: none;
     border-block-end: solid var(--normalColour);
-    font-style: italic;
+    font-style: var(--italicStyle);
 }
 .about h2 {
     font-family: var(--normalfont);
 }
-h3 {
+h3, h4 {
     margin-left: 10px;
     font-family: var(--normalfont);
+}
+.related ul li a {
+    font-family: var(--normalfont);
+    text-decoration: none;
+    
+}
+.related ul li a:hover {
+    border-block-end: solid var(--normalColour);
+    font-style: var(--italicStyle);
+}
+.related ul li {
+    margin-inline-start: 40px;
+    list-style-image: url(./images/favicon.ico);
+}
+.related {
+    margin-block-start: 10px;
 }
 p {
     padding: 10px;
@@ -227,6 +305,35 @@ p {
 }
 .about p a {
     color: #fff;
+}
+/* For video */
+.forvid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    line-height: var(--lineHeight);
+}
+ .forvid p {
+    grid-column: 2 / 3;
+    text-align: center;
+    font-style: var(--italicStyle);
+}
+video {
+    grid-column: 2 / 3;
+    box-shadow: 0 0 5px #000, inset 0 0 5px #000, 0 0 20px 
+    var(--normalColour), inset 0 0 20px var(--normalColour), 0 0 20px 2px 
+    var(--normalColour), inset 0 0 20px 2px var(--normalColour);
+}
+.revi {
+    text-align: center;
+}
+/* For staff */
+.staff {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+.forstaff {
+    margin: 20px;
 }
 .product {
     border: 1px solid var(--normalColour);
@@ -241,7 +348,7 @@ p {
     font-family: var(--normalfont);
 }
 .product img {
-    max-inline-size: 100%;
+    max-width: 100%;
     height: auto;
 }
 .product button {
@@ -250,6 +357,11 @@ p {
     padding: 5px 10px;
     border: none;
     cursor: pointer;
+}
+.prod h1{
+    text-align: center;
+    font-family: var(--normalfont);
+    border-block-end: 1px solid var(--normalColour);
 }
 .herewego {
     display: grid;
@@ -277,41 +389,81 @@ p {
 }
 .contact p,h4,a {
     color: #fff;
+}
+.contact a {
     font-family: var(--normalfont);
 }
-h4 {
+.family {
+   
+    margin-block-end: 118px;
+}
+/* contact us */
+fieldset {
+    margin-block-end: 20px;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    grid-gap: 5px;
+    
+}
+
+label{
+    grid-column: 2 / 3;
+    text-align: center;
     font-family: var(--normalfont);
 }
 
-.family {
-    
-    align-items: center;
+input, textarea {
+    grid-column: 2 / 3;
+    font-family: var(--normalfont);
+    color: #000;
+}
+.moreinfo, .find,.preferences, legend {
+    grid-column: 2 / 3;
+    font-family: var(--normalfont);
+}
+.trial h3 {
     text-align: center;
-    margin-inline-start: 200px;
-    margin-inline-end: 200px;
-    margin-block-end: 118px;
-    margin-block-start: 10px;
-    border-radius: 7px;
 }
-textarea#comment {
-    color: black;
-    block-size: auto;
-}
-input#email {
-    color: black;
-    inline-size: 20%;
-}
-input#firstName {
-    color: black;
-    inline-size: 20%;
-}
-.edit {
+button[type="submit"], button[type="reset"] {
+    grid-column: 2 / 3;
     background-color: var(--normalColour);
     color: black;
     padding: 5px 10px;
     border: none;
+}
+.select, optgroup, option {
+    color: #000;
+    grid-column: 2 / 3;
+    text-align: center;
+    font-family: var(--normalfont);
+}
+input, select {
+    block-size: 2em;
+    
+    font-size: 1rem;
+}
+.often {
+    grid-column: 2 / 3;
+}
+.forcontact {
+    text-align: center;
+    margin-block-end: 2cm;
+}
+label:not(fieldset>label)::after {
+    content: ":";
+}
+.edit {
+    background-color: var(--normalColour);
+    color: #000;
+    padding: 5px 10px;
+    border: none;
     cursor: pointer;
     margin-block-end: 5px;
+}
+.forus {
+    margin-block-end: 10px;
 }
 .forus a {
     text-decoration: none;
@@ -319,13 +471,105 @@ input#firstName {
     
 }
 .forus a:hover {
-    font-style: italic;
+    font-style: var(--italicStyle);
 }
 .scroll {
     margin-block-start: 40px;
     
 }
-
+/* Donate page */
+.donate p{
+    margin-block-end: 50px;
+}
+.donate2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-block-end: 50px;
+}
+.donate2 img {
+    width: 50%;
+    height: auto;
+    margin-inline-start: 40%;
+} 
+.donate2 p {
+    margin-block-start: 5%;
+    margin-inline-end: 50px;
+    line-height: var(--lineHeight);
+}
+.donate h1, .donations h2 {
+    text-align: center;
+    font-family: var(--normalfont);
+}
+.donate p, .donations p {
+    text-align: center;
+    font-size: large;
+}
+.icons, .icons2 {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-inline-start: 5vh;
+    margin-inline-end: 5vh;
+    margin-block-start: 25px;
+    
+}
+.icons img, .icons2 img {
+    inline-size: 10vh;
+    padding: 15%;
+}
+.icons div, .icons2 div {
+    
+    inline-size: 15vh;
+    block-size: 15vh;
+    border: 1px solid #fff;
+    background-color: white;
+    border-radius: 50%;
+}
+/* For Join US*/
+.membership h1, .membership{
+    font-family: var(--normalfont);
+    text-align: center;
+    margin-block-end: 20px;
+}
+.membership2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.savers {
+    grid-column: 2 / 3;
+    
+}
+.savers h2, .savers2 h2 {
+    text-align: left;
+    font-family: var(--normalfont);
+}
+.savers2 {
+    grid-column: 4 / 6;
+    line-height: var(--lineHeight);
+}
+.savers2 ul p {
+    font-size: var(--pfontsize);
+}
+.savers p {
+    line-height: var(--lineHeight);
+    font-size: var(--pfontsize);
+}
+.savers2 ul li {
+    color: var(--normalColour);
+    font-family: var(--normalfont);
+    list-style-image: url(./images/review\ \(2\).png);
+    font-size: 1.5rem;
+}
+.savers p a {
+    font-family: var(--normalfont);
+    color: var(--normalColour);
+    font-size: var(--pfontsize);
+}
+.done img {
+    width: 16px;
+}
 @media (max-width: 768px) {
     
     .navagation {
@@ -344,7 +588,7 @@ input#firstName {
         margin: 0 10px;
     }
     
-    img {
+    .navigation img {
         max-width: 100%;
         margin-block-start: 15px;
     }
@@ -359,17 +603,20 @@ input#firstName {
     
     .product {
         
-        margin: 40px;
+        margin-inline-start: 40px;
         inline-size: 8cm;
     }
     .poster1 {
         inline-size: 100%;
         block-size: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/F9tjZiPUEm-kkcdX20ZU5R_YpNBlnBeQvXfOphczskE.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./images/F9tjZiPUEm-kkcdX20ZU5R_YpNBlnBeQvXfOphczskE.jpg);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
         
+    }
+    .poster3 {
+        block-size: auto;
     }
     .poster {
         block-size: auto;
@@ -377,9 +624,7 @@ input#firstName {
     #goodbye {
         display: none;
     }
-    #goodbye1 {
-        display: none;
-    }
+    
    .about {
         margin: 20px;
    }
@@ -397,15 +642,9 @@ input#firstName {
    .family {
         inline-size: max-content;
         margin: auto;
+        margin-block-end: 10px;
    }
-   input#email {
-        color: black;
-        inline-size: 70%;
-    }
-    input#firstName {
-        color: black;
-        inline-size: 70%;
-    }
+   
     .foot ul li {
         font-size: 12px
     }
@@ -414,6 +653,61 @@ input#firstName {
     }
     .homeimg {
         text-align: center;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 0%;
+        align-items: baseline;
+    }
+    .secondp {
+        display: inline-block;
+    }
+    .forhome {
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+    }
+    .icons , .icons2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }  
+    .icons div, .icons2 div {
+        margin-block-end: 50px;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+    }  
+    .donate2 {
+        display: list-item;
+    }
+    .donate2 img {
+        display: none;
+    }
+    .donate2 p {
+        margin-inline-end: 0;
+    }
+    .forvid {
+        display: inline;
+    }
+    .forvid p {
+        text-align: center;
+    }
+    video {
+        max-width: 900px;
+        width: 100%;
+        
+    }
+    .staff {
+        display: inline;
+    }
+    .membership2 {
+        display: inline;
+        text-align: center;
+    }
+    .savers h2, .savers2 h2 {
+        text-align: center;
+    }
+    .fix {
+        display: none;
     }
     
 }
