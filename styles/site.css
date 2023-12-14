@@ -17,7 +17,7 @@
 .poster {
     inline-size: 100%;
     block-size: auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/F9tjZiPUEmkkcdX20ZU5RYpNBlnBeQvXfOphczskE.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/F9tjZiPUEmkkcdX20ZU5RYpNBlnBeQvXfOphczskE.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -27,7 +27,7 @@
 .poster1 {
     inline-size: 100%;
     block-size: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/F9tjZiPUEmkkcdX20ZU5RYpNBlnBeQvXfOphczskE.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/F9tjZiPUEmkkcdX20ZU5RYpNBlnBeQvXfOphczskE.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -36,7 +36,7 @@
 .poster3 {
     inline-size: 100%;
     block-size: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/pexelsrachelclaire5531437.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/pexelsrachelclaire5531437.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
