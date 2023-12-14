@@ -559,7 +559,7 @@ label:not(fieldset>label)::after {
 .savers2 ul li {
     color: var(--normalColour);
     font-family: var(--normalfont);
-    list-style-image: url(./images/review\ \(2\).png);
+    list-style-image: url(../images/review\ \(2\).png);
     font-size: 1.5rem;
 }
 .savers p a {
@@ -609,7 +609,7 @@ label:not(fieldset>label)::after {
     .poster1 {
         inline-size: 100%;
         block-size: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/F9tjZiPUEmkkcdX20ZU5RYpNBlnBeQvXfOphczskE.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/F9tjZiPUEmkkcdX20ZU5RYpNBlnBeQvXfOphczskE.jpg);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
