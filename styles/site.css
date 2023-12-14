@@ -294,7 +294,7 @@ h3, h4 {
 }
 .related ul li {
     margin-inline-start: 40px;
-    list-style-image: url(/images/favicon.ico);
+    list-style-image: url(../images/favicon.ico);
 }
 .related {
     margin-block-start: 10px;
